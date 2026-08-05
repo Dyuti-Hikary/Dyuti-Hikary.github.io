@@ -120,3 +120,67 @@
     height: 260px !important;
   }
 }
+
+/* ==========================================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ========================================================== */
+@media (max-width: 768px) {
+  header {
+    padding: 0 5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  main section {
+    padding: 80px 5% 40px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    white-space: normal;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .portrait-frame {
+    width: min(250px, 70vw) !important;
+    height: min(250px, 70vw) !important;
+  }
+
+  .about-grid, 
+  .skills-grid, 
+  .projects-grid, 
+  .achievement-grid, 
+  .roles, 
+  .language-row, 
+  .stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .floating-note {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -10px;
+    width: max-content;
+  }
+}
